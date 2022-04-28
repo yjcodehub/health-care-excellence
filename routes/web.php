@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +13,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
-    return view('index');
+    return redirect(app()->getLocale());
 });
-Route::post('/add-application', [HomeController::class, 'add']);
+
+Route::group(['prefix' => '{locale}'], function () {
+    //website route
+    // Route::get('/', 'HomeController@home')->name('index')->middleware('setLocale');
+    Route::view('/', 'index')->middleware('setLocale');
+    Route::post('/save-application', [HomeController::class, 'saveApplication']);
+    // Route::get('/edit-record/{id?}', 'HomeController@store')->name('edit-record')->middleware('setLocale');
+});

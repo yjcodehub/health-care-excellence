@@ -10,6 +10,7 @@
   <meta name="author" content="Grayrids">
   <title>Health Care Excellence</title>
   <!-- Bootstrap CSS -->
+
   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/line-icons.css') }}">
   <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">

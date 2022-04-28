@@ -7,7 +7,12 @@ use App\Models\Application;
 
 class HomeController extends Controller
 {
-    function add(Request $req)
+    function home()
+    {
+        return view("index");
+    }
+
+    function saveApplication(Request $req)
     {   
         $req->validate([
             "fname" => 'required',
@@ -19,10 +24,14 @@ class HomeController extends Controller
             "email" => 'required',
             "tel" => 'required',
             "community" => 'required',
-            "languages[]" => 'required',
-            "family" => 'required'
+            "languages" => 'required',
+            "language_other" => 'required',
+            "family" => 'required',
+            "same_household" => 'required',
         ]);
+
         $app = new Application();
+        $app->lang = $req->lang;
         $app->firstName = $req->fname;
         $app->lastName = $req->lname;
         $app->addLine1 = $req->addLine1;
@@ -36,7 +45,9 @@ class HomeController extends Controller
         $app->community = $req->community;
         $chrStr = implode(", ", $req->languages);
         $app->languages = $chrStr;
+        $app->language_other = $req->language_other;
         $app->family = $req->family;
+        $app->same_household = $req->same_household;
         $app->save();
         return redirect("/");
     }

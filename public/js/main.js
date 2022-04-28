@@ -4,8 +4,13 @@
   /* Other Check box
   ===================================================*/
   $('#otherInput').hide();
-  $('#other').on('click', function () {
-    $('#otherInput').toggle();
+  $('#other').change(function () {
+    if ($(this).prop('checked')) {
+      $('#otherInput').show();
+    }
+    else {
+      $('#otherInput').hide();
+    }
   })
 
   /*   $('#mgf-u').click(function () {

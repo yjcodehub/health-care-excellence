@@ -16,6 +16,8 @@ class CreateApplicationsTable extends Migration
         Schema::create('applications', function (Blueprint $table) {
             
             $table->id();
+            $table->string('lang');
+            // $table->string('how_do_know');
             $table->string('firstname');
             $table->string('lastName');
             $table->string('addLine1');
@@ -28,7 +30,9 @@ class CreateApplicationsTable extends Migration
             $table->string('textOk')->nullable();
             $table->string('community');
             $table->string('languages');
+            $table->string('language_other');
             $table->string('family');
+            $table->string('same_household');
             $table->timestamps();
         });
     }

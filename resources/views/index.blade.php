@@ -125,7 +125,7 @@
       </div>
       <div class="col-sm-3"></div>
     </div>
-    <form action="/add-application" method="POST">
+    <form action="{{ app()->getLocale() . '/save-application' }}" method="POST">
       @csrf
       <div id="collapseTwo" class="collapse mt-3" aria-labelle data-parent="#accordionExample">
         <div class="card-body Regular shadow">
@@ -134,6 +134,7 @@
             <div class="col-sm-12 text-dark mb-3">
               <h6>Contact Information:</h6>
             </div>
+            <input type="hidden" name="lang" value="{{ app()->getLocale() }}">
             <div class="col-sm-6">
               <div class="mb-3">
                 <label for="user">Enter your First name</label>
@@ -372,8 +373,8 @@
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" name="languages[]" value="hindi">
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" name="languages[]" value="hindi" id="hindi">
+                  <label class="form-check-label" for="hindi">
                     Hindi
                   </label>
                 </div>
@@ -382,19 +383,20 @@
                     <div class="input-group-prepend">
                       <div class="">
                         <input type="checkbox" class="form-check-input"
-                          aria-label="checkbox button for following text input" name="" id="other">
+                          aria-label="checkbox button for following text input" name="languages[]" id="other"
+                          value="other">
                       </div>
                       <label class="form-check-label" for="other">
                         Other? Specify
                       </label>
                     </div>
-                    <input type="text" name="languages[]" class="form-control ml-3"
+                    <input type="text" name="language_other" class="form-control ml-3"
                       placeholder="Please specify Other langauge" id="otherInput">
                   </div>
                 </div>
               </div>
               <small class="text-danger">
-                @error('languages[]')
+                @error('languages')
                   {{ $message }}
                 @enderror
               </small>
@@ -416,8 +418,8 @@
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="family" data-toggle="collapse" href="#collapsebtn"
-                role="button" aria-expanded="false" aria-controls="collapsebtn" id="mgf-u">
+              <input class="form-check-input" type="radio" name="family" value="Unsure" data-toggle="collapse"
+                href="#collapsebtn" role="button" aria-expanded="false" aria-controls="collapsebtn" id="mgf-u">
               <label class="form-check-label" for="mgf-u">
                 Unsure
               </label>
@@ -425,19 +427,19 @@
                 <div class="card card-body">
                   <label class="form-label">Do you all live in the same household?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="sameHousehold" name="family">
+                    <input class="form-check-input" type="radio" value="sameHousehold" name="same_household">
                     <label class="form-check-label" for="flexRadioDefault3">
                       Yes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="differentHousehold" name="family">
+                    <input class="form-check-input" type="radio" value="differentHousehold" name="same_household">
                     <label class="form-check-label" for="flexRadioDefault1">
                       No
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" value="N/A" name="family">
+                    <input class="form-check-input" type="radio" value="N/A" name="same_household">
                     <label class="form-check-label" for="flexRadioDefault1">
                       N/A
                     </label>
