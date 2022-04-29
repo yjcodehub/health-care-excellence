@@ -8,15 +8,9 @@
         <div class="col-lg-8 col-md-12 col-sm-12 text-center">
           <div class="text-wrapper wow fadeInRight" data-wow-delay="0.6s">
             <div>
-              <p class="btn btn-subtitle">How It Works?</p>
-              <h3>State of Health Small Business Marketplace </h3>
-              <p>Certified Application Counselors, Marketplace Facilitated Enrollers, and Navigators are types of
-                assistors that can help New Yorkers apply for health insurance, understand their coverage options, and
-                enroll in a plan that is right for them.
-                Individuals and families in Nassau, Suffolk and Westchester counties can now find and purchase in-home
-                care from a New York State licensed home care services agency through NY State of Health’s home care
-                partner, Carina. To find an agency with trained, certified home care aides in your area, click on “Get
-                Started” now.
+              <p class="btn btn-subtitle">@lang('auth.hiw')</p>
+              <h3>@lang('auth.sbm') </h3>
+              <p>@lang('auth.cac')
               </p>
             </div>
           </div>
@@ -32,11 +26,27 @@
     <h5 class="text-center">How did you learn about this study? </h5>
 
     <div class="row p-4">
+      {{-- <div class="col-12">
+        <div class="btn-group-toggle" data-toggle="buttons">
+          <label for="chx1" class="btn btn-primary">
+            <input type="checkbox" class="form-check" id="chx1" checked autocomplete="off"> CHeckbox 1
+
+          </label>
+          <label for="chx2" class="btn btn-primary">
+            <input type="checkbox" class="form-check" id="chx2" autocomplete="off">Checkbox2
+
+          </label>
+          <label for="chx3" class="btn btn-primary">
+            <input type="checkbox" class="form-check" id="chx3" autocomplete="off">Checkbox3
+
+          </label>
+        </div>
+      </div> --}}
       <div class="col-sm-6">
         <div class="card-header border-0">
           <h5 class="mb-0">
-            <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
-              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="btn btn-link btn-block btn-apple" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               Mail
             </button>
           </h5>

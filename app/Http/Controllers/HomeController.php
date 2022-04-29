@@ -13,7 +13,7 @@ class HomeController extends Controller
     }
 
     function saveApplication(Request $req)
-    {   
+    { 
         $req->validate([
             "fname" => 'required',
             "lname" => 'required',

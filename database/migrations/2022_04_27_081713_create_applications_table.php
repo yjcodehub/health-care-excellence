@@ -30,9 +30,9 @@ class CreateApplicationsTable extends Migration
             $table->string('textOk')->nullable();
             $table->string('community');
             $table->string('languages');
-            $table->string('language_other');
+            $table->string('language_other')->nullable();
             $table->string('family');
-            $table->string('same_household');
+            $table->string('same_household')->nullable();
             $table->timestamps();
         });
     }
