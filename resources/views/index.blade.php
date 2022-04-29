@@ -1,6 +1,7 @@
 @extends('layout')
 @section('content')
   <!-- How It Works? Start -->
+
   <div id="features-two" class="section">
     <div class="container">
       <div class="row">
@@ -148,7 +149,8 @@
             <div class="col-sm-6">
               <div class="mb-3">
                 <label for="user">Enter your First name</label>
-                <input type="text" class="form-control" name="fname" id="" placeholder="First Name">
+                <input type="text" class="form-control" name="fname" id="" placeholder="First Name"
+                  value="{{ old('fname') }}">
                 <small class="text-danger">
                   @error('fname')
                     {{ $message }}
@@ -428,7 +430,7 @@
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="family" value="Unsure" data-toggle="collapse"
+              <input class="form-check-input" type="radio" name="" value="Unsure" data-toggle="collapse"
                 href="#collapsebtn" role="button" aria-expanded="false" aria-controls="collapsebtn" id="mgf-u">
               <label class="form-check-label" for="mgf-u">
                 Unsure
@@ -459,6 +461,11 @@
             </div>
             <small class="text-danger">
               @error('family')
+                {{ $message }}
+              @enderror
+            </small>
+            <small class="text-danger">
+              @error('same_household')
                 {{ $message }}
               @enderror
             </small>

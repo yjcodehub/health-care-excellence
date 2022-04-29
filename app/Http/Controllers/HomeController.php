@@ -13,7 +13,8 @@ class HomeController extends Controller
     }
 
     function saveApplication(Request $req)
-    { 
+    {   
+        //  return $req->input();
         $req->validate([
             "fname" => 'required',
             "lname" => 'required',
@@ -25,11 +26,12 @@ class HomeController extends Controller
             "tel" => 'required',
             "community" => 'required',
             "languages" => 'required',
-            "language_other" => 'required',
-            "family" => 'required',
-            "same_household" => 'required',
+            // "language_other" => 'required',
+            // "family" => 'required',
+            // "same_household" => 'required',
         ]);
 
+        
         $app = new Application();
         $app->lang = $req->lang;
         $app->firstName = $req->fname;
@@ -48,6 +50,7 @@ class HomeController extends Controller
         $app->language_other = $req->language_other;
         $app->family = $req->family;
         $app->same_household = $req->same_household;
+        //$req->session()->flash("success", "Application submitted");
         $app->save();
         return redirect("/");
     }
