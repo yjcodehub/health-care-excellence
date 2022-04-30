@@ -17,7 +17,7 @@ class CreateApplicationsTable extends Migration
             
             $table->id();
             $table->string('lang');
-            // $table->string('how_do_know');
+            $table->string('how_do_know');
             $table->string('firstname');
             $table->string('lastName');
             $table->string('addLine1');

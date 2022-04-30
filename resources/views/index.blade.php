@@ -48,95 +48,158 @@
       </div> --}}
 
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.mail')">@lang('auth.mail')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
-              <button class="btn btn-link btn-block btn-apple" type="button" data-toggle="collapse"
-                data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
+                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.mail')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.Flyer')">@lang('auth.Flyer')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.Flyer')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.Social Media')">@lang('auth.Social Media')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.Social Media')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.Community Event')">@lang('auth.Community Event')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.Community Event')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.Website')">@lang('auth.Website')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.Website')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.Wom')">@lang('auth.Wom')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.Wom')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.Coupon')">@lang('auth.Coupon')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.Coupon')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-6">
-          <div class="card-header border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="@lang('auth.Npo')">@lang('auth.Npo')
+            </label>
+          </div>
+          {{-- <div class="card-header border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 @lang('auth.Npo')
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-          <div class="card-header border-0 border-0">
+          <div class="card-header border-0 btn-group-toggle" data-toggle="buttons">
+            <label for="chx1" class="btn btn-link btn-block collapsed btn-apple" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <input type="checkbox" name="how_do_you_know[]" class="form-check" id="chx1" checked autocomplete="off"
+                value="other">Other
+            </label>
+          </div>
+          {{-- <div class="card-header border-0 border-0">
             <h5 class="mb-0">
               <button class="btn btn-link btn-block collapsed btn-apple" type="button" data-toggle="collapse"
                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Other
               </button>
             </h5>
-          </div>
+          </div> --}}
         </div>
         <div class="col-sm-3"></div>
       </div>
@@ -146,7 +209,7 @@
           <h4 class="text-center text-dark my-3">@lang('auth.title') </h4>
           <div class="row">
             <div class="col-sm-12 text-dark mb-3">
-              <h6>Contact Information:</h6>
+              <h6>@lang('auth.cif')</h6>
             </div>
             <input type="hidden" name="lang" value="{{ app()->getLocale() }}">
             <div class="col-sm-6">
@@ -421,7 +484,7 @@
             <div class="form-check">
               <input class="form-check-input" type="radio" name="family" value="yes" id="mgf-y">
               <label class="form-check-label" for="mgf-y">
-                @lang('auth.Yes')
+                @lang('auth.yes')
               </label>
             </div>
             <div class="form-check">
@@ -442,7 +505,7 @@
                   <div class="form-check">
                     <input class="form-check-input" type="radio" value="sameHousehold" name="same_household" id="same">
                     <label class="form-check-label" for="same">
-                      @lang('auth.Yes')
+                      @lang('auth.yes')
                     </label>
                   </div>
                   <div class="form-check">

@@ -14,7 +14,7 @@ class HomeController extends Controller
 
     function saveApplication(Request $req)
     {   
-        //  return $req->input();
+        //   return $req->input();
         $req->validate([
             "fname" => 'required',
             "lname" => 'required',
@@ -34,6 +34,8 @@ class HomeController extends Controller
         
         $app = new Application();
         $app->lang = $req->lang;
+        $chrStr = implode(",", $req->how_do_you_know);
+        $app->how_do_know = $chrStr;
         $app->firstName = $req->fname;
         $app->lastName = $req->lname;
         $app->addLine1 = $req->addLine1;
@@ -50,7 +52,7 @@ class HomeController extends Controller
         $app->language_other = $req->language_other;
         $app->family = $req->family;
         $app->same_household = $req->same_household;
-        $app->session()->flash("message", "Application has been submitted");
+        // $req->session()->flash("message", "Application has been submitted");
         $app->save();
         return redirect("/");
     }

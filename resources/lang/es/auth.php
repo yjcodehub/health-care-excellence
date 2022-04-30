@@ -53,6 +53,7 @@ return [
     'Afro-Caribbean'            => 'Afrocaribeña',
     'Refugee/Asylee'            => 'Refugiada / Asilada',
     'Pref-Lang'                 => 'Idioma preferido',
+    'cif'                       => 'Información del contacto:',
     'English'                   => 'Inglesa',
     'Spanish'                   => 'Española',
     'Guj'                       => 'guyaratí',

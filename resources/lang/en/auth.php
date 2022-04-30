@@ -52,6 +52,7 @@ return [
     'Nigerian'              => 'Nigerian',
     'Afro-Caribbean'        => 'Afro-Caribbean',
     'Refugee'               => 'Refugee/Asylee',
+    'cif'                   => 'Contact Information:',
     'Pref-Lang'             => 'Preferred Language',
     'English'               => 'English',
     'Spanish'               => 'Spanish',
