@@ -62,6 +62,7 @@ return [
     'mgfam'                     => '¿Eres parte de una familia multigeneracional? (Tres o más generaciones viviendo en Nueva York)',
     'yes'                       => 'sí',
     'Unsure'                    => 'Insegura',
+    'dyalishh'                    => '¿Viven todos en el mismo hogar?',
     'Que'                       => '¿Preguntas?',
     'e-id'                      => 'salud@ny.gov',
     'submit'                    => 'entregar',

@@ -50,7 +50,7 @@ class HomeController extends Controller
         $app->language_other = $req->language_other;
         $app->family = $req->family;
         $app->same_household = $req->same_household;
-        //$req->session()->flash("success", "Application submitted");
+        $app->session()->flash("message", "Application has been submitted");
         $app->save();
         return redirect("/");
     }
